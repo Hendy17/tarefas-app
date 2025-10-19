@@ -455,8 +455,8 @@ Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](L
 
 ## 👥 **Autores e Reconhecimentos**
 
-- **Desenvolvedor Principal**: [Seu Nome]
-- **Inspiração**: Demonstração de habilidades fullstack
+- **Desenvolvedor Principal**: Hendy Vorpagel
+- **Inspiração**: Sistema completo desenvolvido para demonstrar expertise em arquitetura fullstack moderna com Java Spring Boot e React TypeScript
 - **Tecnologias**: Spring Boot Team, React Team
 
 ---
