@@ -1,0 +1,7 @@
+-- Dados iniciais para teste
+INSERT INTO tarefas (titulo, descricao, status, data_criacao, data_atualizacao) VALUES
+('Estudar Spring Boot', 'Aprender sobre controllers, services e repositories', 'PENDENTE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Configurar banco H2', 'Configurar banco de dados em memória para desenvolvimento', 'CONCLUIDA', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Criar API REST', 'Implementar endpoints para CRUD de tarefas', 'PENDENTE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Documentar projeto', 'Criar documentação da API e do projeto', 'PENDENTE', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP),
+('Testar aplicação', 'Realizar testes manuais e automatizados', 'CANCELADA', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);

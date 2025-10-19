@@ -1,0 +1,60 @@
+{
+  "name": "tarefas-app",
+  "version": "1.0.0",
+  "description": "Sistema fullstack de gerenciamento de tarefas - Backend Spring Boot + Frontend React",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && ./mvnw spring-boot:run",
+    "dev:frontend": "cd frontend && npm start",
+    "install:all": "npm install && cd backend && npm install 2>/dev/null || true && cd ../frontend && npm install",
+    "test:all": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && ./mvnw test",
+    "test:frontend": "cd frontend && npm test -- --coverage --watchAll=false",
+    "build:all": "npm run build:backend && npm run build:frontend",
+    "build:backend": "cd backend && ./mvnw clean package",
+    "build:frontend": "cd frontend && npm run build",
+    "clean:all": "npm run clean:backend && npm run clean:frontend",
+    "clean:backend": "cd backend && ./mvnw clean",
+    "clean:frontend": "cd frontend && rm -rf build node_modules",
+    "lint:frontend": "cd frontend && npm run lint",
+    "format": "cd frontend && npm run format",
+    "start:prod": "concurrently \"java -jar backend/target/*.jar\" \"serve -s frontend/build\"",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "serve": "^14.2.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/tarefas-app.git"
+  },
+  "keywords": [
+    "java",
+    "spring-boot",
+    "react",
+    "typescript",
+    "rest-api",
+    "fullstack",
+    "task-management",
+    "h2-database",
+    "maven"
+  ],
+  "author": "Seu Nome <seu.email@exemplo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seu-usuario/tarefas-app/issues"
+  },
+  "homepage": "https://github.com/seu-usuario/tarefas-app#readme"
+}

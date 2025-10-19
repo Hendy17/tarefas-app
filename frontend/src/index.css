@@ -1,0 +1,11 @@
+/* ========================================
+   INDEX.CSS - Apenas imports e resets básicos
+   ======================================== */
+
+/* Importação dos estilos globais */
+@import './styles/Global.css';
+
+/* Reset mínimo necessário */
+body {
+  margin: 0;
+}
